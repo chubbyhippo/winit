@@ -12,10 +12,6 @@ runas.exe /user:$(Get-WmiObject -Class Win32_ComputerSystem | Select-Object -Exp
 # scoop
 runas.exe /user:$(Get-WmiObject -Class Win32_ComputerSystem | Select-Object -ExpandProperty UserName) "powershell.exe -NoProfile -ExecutionPolicy Bypass -Command \"Invoke-RestMethod https://raw.githubusercontent.com/chubbyhippo/scoop/refs/heads/main/install.ps1 | Invoke-Expression\""
 
-# setup autohotkey
-Invoke-WebRequest -Uri "https://raw.githubusercontent.com/chubbyhippo/ahk/master/remap.ahk" -OutFile "$Home\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\remap.ahk"
-Invoke-WebRequest -Uri "https://raw.githubusercontent.com/chubbyhippo/ahk/master/xcape.ahk" -OutFile "$Home\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\xcape.ahk"
-
 # vscode setup
 Invoke-RestMethod https://raw.githubusercontent.com/chubbyhippo/code-settings/main/install.ps1| Invoke-Expression
 
