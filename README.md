@@ -10,9 +10,9 @@ ipconfig /release
 irm https://raw.githubusercontent.com/chubbyhippo/win-init/refs/heads/main/install.ps1 | iex
 ```
 ### virtualbox
-```cmd
+```sh
 cd "C:\Program Files\Oracle\VirtualBox"
 ```
-```cmd
+```sh
 VBoxManage modifyvm "Your_VM_Name" --nested-hw-virt on
 ```
