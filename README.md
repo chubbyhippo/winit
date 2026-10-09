@@ -13,3 +13,6 @@ irm https://raw.githubusercontent.com/chubbyhippo/win-init/refs/heads/main/insta
 ```cmd
 cd "C:\Program Files\Oracle\VirtualBox"
 ```
+```cmd
+VBoxManage modifyvm "Your_VM_Name" --nested-hw-virt on
+```
