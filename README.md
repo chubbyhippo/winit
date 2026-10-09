@@ -9,3 +9,7 @@ ipconfig /release
 ```powershell
 irm https://raw.githubusercontent.com/chubbyhippo/win-init/refs/heads/main/install.ps1 | iex
 ```
+### virtualbox
+```cmd
+cd "C:\Program Files\Oracle\VirtualBox"
+```
